@@ -22,13 +22,13 @@
     <!-- Header -->
     <header class="fixed w-full bg-gray-900/75 backdrop-blur-xl border border-white/10 z-50 transition-all duration-300">
       <nav
-        class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20"
+        class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center h-16 sm:h-20"
       >
-        <a href="#" class="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">Megha Gupta</a>
-        <div class="hidden md:flex space-x-8">
+        <a href="#" class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">Megha Gupta</a>
+        <div class="hidden md:flex space-x-6">
           <a
             href="#home"
-            class="relative group hover:text-purple-400 transition-colors duration-300"
+            class="relative group hover:text-purple-400 transition-colors duration-300 text-sm"
           >
             Home
             <span
@@ -37,7 +37,7 @@
           </a>
           <a
             href="#about"
-            class="relative group hover:text-purple-400 transition-colors duration-300"
+            class="relative group hover:text-purple-400 transition-colors duration-300 text-sm"
           >
             About
             <span
@@ -46,7 +46,7 @@
           </a>
           <a
             href="#skills"
-            class="relative group hover:text-purple-400 transition-colors duration-300"
+            class="relative group hover:text-purple-400 transition-colors duration-300 text-sm"
           >
             Skills
             <span
@@ -55,7 +55,7 @@
           </a>
           <a
             href="#work"
-            class="relative group hover:text-purple-400 transition-colors duration-300"
+            class="relative group hover:text-purple-400 transition-colors duration-300 text-sm"
           >
             Work
             <span
@@ -64,7 +64,7 @@
           </a>
           <a
             href="mailto:meghagupta270505@gmail.com"
-            class="relative group hover:text-purple-400 transition-colors duration-300"
+            class="relative group hover:text-purple-400 transition-colors duration-300 text-sm"
           >
             Contact
             <span
@@ -79,46 +79,59 @@
           <i class="bx bx-menu"></i>
         </div>
       </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-900/90 backdrop-blur-xl border-t border-white/10">
+        <div class="flex flex-col items-center space-y-4 py-4">
+          <a href="#home" class="text-lg hover:text-purple-400 transition-colors duration-300">Home</a>
+          <a href="#about" class="text-lg hover:text-purple-400 transition-colors duration-300">About</a>
+          <a href="#skills" class="text-lg hover:text-purple-400 transition-colors duration-300">Skills</a>
+          <a href="#work" class="text-lg hover:text-purple-400 transition-colors duration-300">Work</a>
+          <a href="mailto:meghagupta270505@gmail.com" class="text-lg hover:text-purple-400 transition-colors duration-300">Contact</a>
+        </div>
+      </div>
     </header>
 
     <main>
       <!-- Hero Section -->
       <section
         id="home"
-        class="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-blue-900 to-indigo-800"
+        class="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-blue-900 to-indigo-800 py-16 sm:pt-24"
       >
         <div
-          class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10"
+          class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center relative z-10"
         >
-          <div class="space-y-8">
-            <div class="space-y-4">
-             
-              <div
-                class="text-2xl md:text-3xl font-light text-gray-300 overflow-hidden border-r-4 border-indigo-500 whitespace-nowrap animate-[typing_3.5s_steps(40,end),blink-caret_0.75s_step-end_infinite]"
-              >
-                Full Stack Web Developer
-              </div>
+          <div class="space-y-4 sm:space-y-6 text-center md:text-left">
+            <h2 class="text-base sm:text-lg md:text-xl text-blue-300 font-light tracking-wide">
+              Hello, I'm
+            </h2>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
+              <span class="text-white">Megha</span>
+              <span class="block bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">Gupta</span>
+            </h1>
+            <div
+              class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-gray-300 overflow-hidden border-r-4 border-indigo-500 whitespace-nowrap mx-auto md:mx-0 max-w-full animate-[typing_3.5s_steps(40,end),blink-caret_0.75s_step-end_infinite]"
+            >
+              Full Stack Web Developer
             </div>
-            <p class="text-xl text-gray-300 leading-relaxed max-w-lg">
+            <p class="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed max-w-xs sm:max-w-sm md:max-w-md mx-auto md:mx-0">
               Crafting digital experiences that solve real-world problems with
               cutting-edge technology and innovative solutions.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4">
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
               <a
                 href="https://github.com/megha2627"
-                class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-[0_0_50px_rgba(102,126,234,0.5)] text-center"
+                class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-[0_0_50px_rgba(102,126,234,0.5)] text-center text-sm sm:text-base"
               >
                 Let's Connect
               </a>
               <a
                 href="#work"
-                class="border-2 border-blue-400 text-blue-400 px-8 py-4 rounded-full font-semibold hover:bg-blue-400 hover:text-white transition-all duration-300 text-center"
+                class="border-2 border-blue-400 text-blue-400 px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full font-semibold hover:bg-blue-400 hover:text-white transition-all duration-300 text-center text-sm sm:text-base"
               >
                 View My Work
               </a>
             </div>
-            <div class="flex space-x-6 pt-4">
-              <!-- LinkedIn Icon -->
+            <div class="flex justify-center md:justify-start space-x-3 sm:space-x-4 md:space-x-6 pt-4">
               <a
                 href="https://linkedin.com/in/meghagupta2005"
                 target="_blank"
@@ -127,11 +140,9 @@
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
                   alt="LinkedIn"
-                  class="w-10 h-10 inline-block"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 inline-block"
                 />
               </a>
-
-              <!-- GitHub Icon -->
               <a
                 href="https://github.com/megha2627"
                 target="_blank"
@@ -140,11 +151,9 @@
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
                   alt="GitHub"
-                  class="w-10 h-10 inline-block"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 inline-block"
                 />
               </a>
-
-              <!-- LeetCode Icon -->
               <a
                 href="https://leetcode.com/u/meghagupta26/"
                 target="_blank"
@@ -153,11 +162,9 @@
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
                   alt="LeetCode"
-                  class="w-10 h-10 inline-block"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 inline-block"
                 />
               </a>
-
-              <!-- GeeksforGeeks Icon -->
               <a
                 href="https://www.geeksforgeeks.org/user/meghaguptx7n0/"
                 target="_blank"
@@ -166,11 +173,9 @@
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg"
                   alt="GeeksforGeeks"
-                  class="w-10 h-10 inline-block"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 inline-block"
                 />
               </a>
-
-              <!-- HackerRank Icon -->
               <a
                 href="https://www.hackerrank.com/profile/meghagupta270505"
                 target="_blank"
@@ -179,21 +184,23 @@
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png"
                   alt="HackerRank"
-                  class="w-10 h-10 inline-block"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 inline-block"
                 />
               </a>
             </div>
           </div>
-          <div class="flex justify-center">
-            <div class="relative">
-              <div class="w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-indigo-400 to-purple-500 rounded-[50%_40%_30%_70%_/_60%_30%_70%_40%] animate-[blob_7s_ease-in-out_infinite] shadow-[0_0_50px_rgba(102,126,234,0.5)]"></div>
+          <div class="flex justify-center mt-8 md:mt-0">
+            <div class="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+              <div class="w-full h-full bg-gradient-to-br from-indigo-400 to-purple-500 rounded-[50%_40%_30%_70%_/_60%_30%_70%_40%] animate-[blob_7s_ease-in-out_infinite] shadow-[0_0_50px_rgba(102,126,234,0.5)]"></div>
               <div
-                class="absolute inset-4 rounded-full overflow-hidden border-4 border-white/20"
+                class="absolute inset-2 sm:inset-3 md:inset-4 rounded-full overflow-hidden border-4 border-white/20"
               >
+                <!-- Replace 'assets/img/hello.jpg' with the correct path to your image -->
                 <img
                   src="assets/img/hello.jpg"
                   alt="Megha Gupta"
                   class="w-full h-full object-cover"
+                  onerror="this.src='https://via.placeholder.com/300?text=Profile+Image'"
                 />
               </div>
             </div>
@@ -203,84 +210,84 @@
       </section>
 
       <!-- About Section -->
-      <section id="about" class="py-24 bg-gray-800">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="text-center mb-16">
-            <h2 class="text-5xl font-bold mb-4">
+      <section id="about" class="py-16 sm:py-24 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               About <span class="bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">Me</span>
             </h2>
             <div
-              class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"
+              class="w-20 sm:w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"
             ></div>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16 items-center">
             <div class="space-y-6">
-              <h3 class="text-3xl font-bold text-white mb-6">
+              <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 sm:mb-6">
                 Passionate Developer & Problem Solver
               </h3>
-              <p class="text-lg text-gray-300 leading-relaxed">
+              <p class="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed">
                 I'm an enthusiastic full-stack developer with a strong
                 foundation in Data Structures and Algorithms. My passion lies in
                 creating innovative solutions that bridge the gap between
                 complex technical challenges and real-world problems.
               </p>
-              <p class="text-lg text-gray-300 leading-relaxed">
+              <p class="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed">
                 With hands-on experience in the MERN stack, I focus on building
                 scalable, user-centric applications that make a meaningful
                 impact. I believe in continuous learning and staying at the
                 forefront of technology trends.
               </p>
-              <div class="grid grid-cols-2 gap-6 pt-6">
+              <div class="grid grid-cols-2 gap-4 sm:gap-6 pt-4 sm:pt-6">
                 <div class="text-center p-4 bg-gray-900/75 backdrop-blur-xl border border-white/10 rounded-xl">
-                  <div class="text-3xl font-bold text-blue-400">50+</div>
-                  <div class="text-gray-300">Projects Completed</div>
+                  <div class="text-xl sm:text-2xl md:text-3xl font-bold text-blue-400">50+</div>
+                  <div class="text-gray-300 text-sm sm:text-base">Projects Completed</div>
                 </div>
                 <div class="text-center p-4 bg-gray-900/75 backdrop-blur-xl border border-white/10 rounded-xl">
-                  <div class="text-3xl font-bold text-purple-400">24/7</div>
-                  <div class="text-gray-300">Learning Mode</div>
+                  <div class="text-xl sm:text-2xl md:text-3xl font-bold text-purple-400">24/7</div>
+                  <div class="text-gray-300 text-sm sm:text-base">Learning Mode</div>
                 </div>
               </div>
             </div>
 
             <div class="relative">
-              <div class="bg-gray-900/75 backdrop-blur-xl border border-white/10 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <div class="bg-gray-900/75 backdrop-blur-xl border border-white/10 rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <div class="space-y-6">
                   <div class="flex items-center space-x-4">
                     <div
-                      class="w-12 h-12 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center"
+                      class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center"
                     >
-                      <i class="bx bx-code-alt text-white text-xl"></i>
+                      <i class="bx bx-code-alt text-white text-base sm:text-lg md:text-xl"></i>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-lg">Clean Code Advocate</h4>
-                      <p class="text-gray-400">
+                      <h4 class="font-semibold text-sm sm:text-base md:text-lg">Clean Code Advocate</h4>
+                      <p class="text-gray-400 text-xs sm:text-sm md:text-base">
                         Writing maintainable, scalable solutions
                       </p>
                     </div>
                   </div>
                   <div class="flex items-center space-x-4">
                     <div
-                      class="w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center"
+                      class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center"
                     >
-                      <i class="bx bx-brain text-white text-xl"></i>
+                      <i class="bx bx-brain text-white text-base sm:text-lg md:text-xl"></i>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-lg">Problem Solver</h4>
-                      <p class="text-gray-400">
+                      <h4 class="font-semibold text-sm sm:text-base md:text-lg">Problem Solver</h4>
+                      <p class="text-gray-400 text-xs sm:text-sm md:text-base">
                         Turning complex challenges into simple solutions
                       </p>
                     </div>
                   </div>
                   <div class="flex items-center space-x-4">
                     <div
-                      class="w-12 h-12 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center"
+                      class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center"
                     >
-                      <i class="bx bx-rocket text-white text-xl"></i>
+                      <i class="bx bx-rocket text-white text-base sm:text-lg md:text-xl"></i>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-lg">Innovation Driven</h4>
-                      <p class="text-gray-400">
+                      <h4 class="font-semibold text-sm sm:text-base md:text-lg">Innovation Driven</h4>
+                      <p class="text-gray-400 text-xs sm:text-sm md:text-base">
                         Always exploring cutting-edge technologies
                       </p>
                     </div>
@@ -293,26 +300,26 @@
       </section>
 
       <!-- Skills Section -->
-      <section id="skills" class="py-24 bg-gray-900">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="text-center mb-16">
-            <h2 class="text-5xl font-bold mb-4">
+      <section id="skills" class="py-16 sm:py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Technical <span class="bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">Expertise</span>
             </h2>
             <div
-              class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"
+              class="w-20 sm:w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"
             ></div>
           </div>
 
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div class="bg-gray-900/75 backdrop-blur-xl border border-white/10 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl text-center">
               <div
-                class="w-16 h-16 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4"
               >
-                <i class="bx bxl-java text-white text-2xl"></i>
+                <i class="bx bxl-java text-white text-lg sm:text-xl md:text-2xl"></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Java</h3>
-              <p class="text-gray-400 text-sm">Core Programming Language</p>
+              <h3 class="text-base sm:text-lg md:text-xl font-semibold mb-2">Java</h3>
+              <p class="text-gray-400 text-xs sm:text-sm">Core Programming Language</p>
               <div class="mt-4 h-2 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full relative overflow-hidden">
                 <div class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/60 to-transparent animate-[shimmer_2s_infinite]"></div>
               </div>
@@ -320,12 +327,12 @@
 
             <div class="bg-gray-900/75 backdrop-blur-xl border border-white/10 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl text-center">
               <div
-                class="w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4"
               >
-                <i class="bx bxl-react text-white text-2xl"></i>
+                <i class="bx bxl-react text-white text-lg sm:text-xl md:text-2xl"></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">React.js</h3>
-              <p class="text-gray-400 text-sm">Frontend Framework</p>
+              <h3 class="text-base sm:text-lg md:text-xl font-semibold mb-2">React.js</h3>
+              <p class="text-gray-400 text-xs sm:text-sm">Frontend Framework</p>
               <div class="mt-4 h-2 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full relative overflow-hidden">
                 <div class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/60 to-transparent animate-[shimmer_2s_infinite]"></div>
               </div>
@@ -333,12 +340,12 @@
 
             <div class="bg-gray-900/75 backdrop-blur-xl border border-white/10 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl text-center">
               <div
-                class="w-16 h-16 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4"
               >
-                <i class="bx bxl-nodejs text-white text-2xl"></i>
+                <i class="bx bxl-nodejs text-white text-lg sm:text-xl md:text-2xl"></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Node.js</h3>
-              <p class="text-gray-400 text-sm">Backend Runtime</p>
+              <h3 class="text-base sm:text-lg md:text-xl font-semibold mb-2">Node.js</h3>
+              <p class="text-gray-400 text-xs sm:text-sm">Backend Runtime</p>
               <div class="mt-4 h-2 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full relative overflow-hidden">
                 <div class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/60 to-transparent animate-[shimmer_2s_infinite]"></div>
               </div>
@@ -346,12 +353,12 @@
 
             <div class="bg-gray-900/75 backdrop-blur-xl border border-white/10 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl text-center">
               <div
-                class="w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-full flex items-center justify-center mx-auto mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-full flex items-center justify-center mx-auto mb-4"
               >
-                <i class="bx bxl-mongodb text-white text-2xl"></i>
+                <i class="bx bxl-mongodb text-white text-lg sm:text-xl md:text-2xl"></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">MongoDB</h3>
-              <p class="text-gray-400 text-sm">NoSQL Database</p>
+              <h3 class="text-base sm:text-lg md:text-xl font-semibold mb-2">MongoDB</h3>
+              <p class="text-gray-400 text-xs sm:text-sm">NoSQL Database</p>
               <div class="mt-4 h-2 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full relative overflow-hidden">
                 <div class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/60 to-transparent animate-[shimmer_2s_infinite]"></div>
               </div>
@@ -359,12 +366,12 @@
 
             <div class="bg-gray-900/75 backdrop-blur-xl border border-white/10 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl text-center">
               <div
-                class="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4"
               >
-                <i class="bx bx-server text-white text-2xl"></i>
+                <i class="bx bx-server text-white text-lg sm:text-xl md:text-2xl"></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Express.js</h3>
-              <p class="text-gray-400 text-sm">Web Framework</p>
+              <h3 class="text-base sm:text-lg md:text-xl font-semibold mb-2">Express.js</h3>
+              <p class="text-gray-400 text-xs sm:text-sm">Web Framework</p>
               <div class="mt-4 h-2 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full relative overflow-hidden">
                 <div class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/60 to-transparent animate-[shimmer_2s_infinite]"></div>
               </div>
@@ -372,12 +379,12 @@
 
             <div class="bg-gray-900/75 backdrop-blur-xl border border-white/10 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl text-center">
               <div
-                class="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4"
               >
-                <i class="bx bx-data text-white text-2xl"></i>
+                <i class="bx bx-data text-white text-lg sm:text-xl md:text-2xl"></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">PostgreSQL</h3>
-              <p class="text-gray-400 text-sm">Relational Database</p>
+              <h3 class="text-base sm:text-lg md:text-xl font-semibold mb-2">PostgreSQL</h3>
+              <p class="text-gray-400 text-xs sm:text-sm">Relational Database</p>
               <div class="mt-4 h-2 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full relative overflow-hidden">
                 <div class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/60 to-transparent animate-[shimmer_2s_infinite]"></div>
               </div>
@@ -385,12 +392,12 @@
 
             <div class="bg-gray-900/75 backdrop-blur-xl border border-white/10 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl text-center">
               <div
-                class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4"
               >
-                <i class="bx bx-code-block text-white text-2xl"></i>
+                <i class="bx bx-code-block text-white text-lg sm:text-xl md:text-2xl"></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">DSA</h3>
-              <p class="text-gray-400 text-sm">Data Structures & Algorithms</p>
+              <h3 class="text-base sm:text-lg md:text-xl font-semibold mb-2">DSA</h3>
+              <p class="text-gray-400 text-xs sm:text-sm">Data Structures & Algorithms</p>
               <div class="mt-4 h-2 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full relative overflow-hidden">
                 <div class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/60 to-transparent animate-[shimmer_2s_infinite]"></div>
               </div>
@@ -398,12 +405,12 @@
 
             <div class="bg-gray-900/75 backdrop-blur-xl border border-white/10 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl text-center">
               <div
-                class="w-16 h-16 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full flex items-center justify-center mx-auto mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full flex items-center justify-center mx-auto mb-4"
               >
-                <i class="bx bxl-github text-white text-2xl"></i>
+                <i class="bx bxl-github text-white text-lg sm:text-xl md:text-2xl"></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Next.js</h3>
-              <p class="text-gray-400 text-sm">React Framework</p>
+              <h3 class="text-base sm:text-lg md:text-xl font-semibold mb-2">Next.js</h3>
+              <p class="text-gray-400 text-xs sm:text-sm">React Framework</p>
               <div class="mt-4 h-2 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full relative overflow-hidden">
                 <div class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/60 to-transparent animate-[shimmer_2s_infinite]"></div>
               </div>
@@ -413,67 +420,67 @@
       </section>
 
       <!-- Projects Section -->
-      <section id="work" class="py-24 bg-gray-800">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="text-center mb-16">
-            <h2 class="text-5xl font-bold mb-4">
+      <section id="work" class="py-16 sm:py-24 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Featured <span class="bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">Projects</span>
             </h2>
             <div
-              class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"
+              class="w-20 sm:w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"
             ></div>
           </div>
 
-          <div class="grid lg:grid-cols-2 gap-12">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12">
             <!-- Project 1 -->
             <div
               class="bg-gray-900/75 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl group"
             >
-              <div class="p-8">
+              <div class="p-6 sm:p-8">
                 <div class="flex items-center justify-between mb-6">
                   <div
-                    class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center"
+                    class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center"
                   >
-                    <i class="bx bx-transfer-alt text-white text-xl"></i>
+                    <i class="bx bx-transfer-alt text-white text-base sm:text-lg md:text-xl"></i>
                   </div>
                   <div class="flex space-x-2">
                     <span
-                      class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs"
+                      class="px-2 py-1 sm:px-3 sm:py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs"
                       >React</span
                     >
                     <span
-                      class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-xs"
+                      class="px-2 py-1 sm:px-3 sm:py-1 bg-green-500/20 text-green-400 rounded-full text-xs"
                       >Node.js</span
                     >
                   </div>
                 </div>
 
                 <h3
-                  class="text-2xl font-bold mb-3 group-hover:text-blue-400 transition-colors"
+                  class="text-lg sm:text-xl md:text-2xl font-bold mb-3 group-hover:text-blue-400 transition-colors"
                 >
                   Barter Circle Connect
                 </h3>
 
-                <p class="text-gray-300 mb-4 leading-relaxed">
+                <p class="text-gray-300 mb-4 leading-relaxed text-xs sm:text-sm md:text-base">
                   A revolutionary peer-to-peer platform enabling skill and
                   service exchange without monetary transactions. Built with
                   modern web technologies for seamless user experience.
                 </p>
 
                 <div class="space-y-3 mb-6">
-                  <div class="flex items-center text-sm text-gray-400">
+                  <div class="flex items-center text-xs sm:text-sm md:text-sm text-gray-400">
                     <i class="bx bx-check text-green-400 mr-2"></i>
                     RESTful API Development
                   </div>
-                  <div class="flex items-center text-sm text-gray-400">
+                  <div class="flex items-center text-xs sm:text-sm md:text-sm text-gray-400">
                     <i class="bx bx-check text-green-400 mr-2"></i>
                     JWT Authentication System
                   </div>
-                  <div class="flex items-center text-sm text-gray-400">
+                  <div class="flex items-center text-xs sm:text-sm md:text-sm text-gray-400">
                     <i class="bx bx-check text-green-400 mr-2"></i>
                     Real-time User Matching
                   </div>
-                  <div class="flex items-center text-sm text-gray-400">
+                  <div class="flex items-center text-xs sm:text-sm md:text-sm text-gray-400">
                     <i class="bx bx-check text-green-400 mr-2"></i>
                     Responsive UI Design
                   </div>
@@ -482,7 +489,7 @@
                 <div class="flex space-x-4">
                   <a
                     href="https://github.com/megha2627/barter-circle-connect.git"
-                    class="flex-1 border border-blue-400 text-blue-400 py-3 px-6 rounded-lg text-center font-semibold hover:bg-blue-400 hover:text-white transition-all"
+                    class="flex-1 border border-blue-400 text-blue-400 py-2 sm:py-3 px-4 sm:px-6 rounded-lg text-center font-semibold hover:bg-blue-400 hover:text-white transition-all text-xs sm:text-sm md:text-base"
                   >
                     <i class="bx bx-link-external mr-2"></i>Source code
                   </a>
@@ -494,51 +501,51 @@
             <div
               class="bg-gray-900/75 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl group"
             >
-              <div class="p-8">
+              <div class="p-6 sm:p-8">
                 <div class="flex items-center justify-between mb-6">
                   <div
-                    class="w-12 h-12 bg-gradient-to-r from-pink-500 to-rose-600 rounded-lg flex items-center justify-center"
+                    class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-pink-500 to-rose-600 rounded-lg flex items-center justify-center"
                   >
-                    <i class="bx bx-store-alt text-white text-xl"></i>
+                    <i class="bx bx-store-alt text-white text-base sm:text-lg md:text-xl"></i>
                   </div>
                   <div class="flex space-x-2">
                     <span
-                      class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs"
+                      class="px-2 py-1 sm:px-3 sm:py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs"
                       >React</span
                     >
                     <span
-                      class="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-xs"
+                      class="px-2 py-1 sm:px-3 sm:py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-xs"
                       >MongoDB</span
                     >
                   </div>
                 </div>
 
                 <h3
-                  class="text-2xl font-bold mb-3 group-hover:text-pink-400 transition-colors"
+                  class="text-lg sm:text-xl md:text-2xl font-bold mb-3 group-hover:text-pink-400 transition-colors"
                 >
                   Fashion Ecommerce Platform
                 </h3>
 
-                <p class="text-gray-300 mb-4 leading-relaxed">
+                <p class="text-gray-300 mb-4 leading-relaxed text-xs sm:text-sm md:text-base">
                   A comprehensive ecommerce solution for women's fashion with
                   intuitive design, seamless shopping experience, and robust
                   backend functionality.
                 </p>
 
                 <div class="space-y-3 mb-6">
-                  <div class="flex items-center text-sm text-gray-400">
+                  <div class="flex items-center text-xs sm:text-sm md:text-sm text-gray-400">
                     <i class="bx bx-check text-green-400 mr-2"></i>
                     Interactive Product Catalog
                   </div>
-                  <div class="flex items-center text-sm text-gray-400">
+                  <div class="flex items-center text-xs sm:text-sm md:text-sm text-gray-400">
                     <i class="bx bx-check text-green-400 mr-2"></i>
                     Shopping Cart Management
                   </div>
-                  <div class="flex items-center text-sm text-gray-400">
+                  <div class="flex items-center text-xs sm:text-sm md:text-sm text-gray-400">
                     <i class="bx bx-check text-green-400 mr-2"></i>
                     Order Processing System
                   </div>
-                  <div class="flex items-center text-sm text-gray-400">
+                  <div class="flex items-center text-xs sm:text-sm md:text-sm text-gray-400">
                     <i class="bx bx-check text-green-400 mr-2"></i>
                     User Authentication
                   </div>
@@ -547,7 +554,7 @@
                 <div class="flex space-x-4">
                   <a
                     href="https://github.com/megha2627/Women-s-Fashion-Ecommerce-Website.git"
-                    class="flex-1 bg-gradient-to-r from-pink-500 to-rose-600 text-white py-3 px-6 rounded-lg text-center font-semibold hover:from-pink-600 hover:to-rose-700 transition-all"
+                    class="flex-1 bg-gradient-to-r from-pink-500 to-rose-600 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-lg text-center font-semibold hover:from-pink-600 hover:to-rose-700 transition-all text-xs sm:text-sm md:text-base"
                   >
                     <i class="bx bx-code-alt mr-2"></i>Source Code
                   </a>
@@ -558,5 +565,17 @@
         </div>
       </section>
     </main>
+
+    <script>
+      const navToggle = document.getElementById('nav-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      navToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        const icon = navToggle.querySelector('i');
+        icon.classList.toggle('bx-menu');
+        icon.classList.toggle('bx-x');
+      });
+    </script>
   </body>
 </html>
